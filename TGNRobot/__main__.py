@@ -77,24 +77,25 @@ PM_START_TEXT = """
 BORZ поможет модерировать ваши чаты!
 
 Добавьте бота в ваш чат и выдайте права администратора.
- [❤](https://telegra.ph/file/8fe203de66df070f238bf.jpg)
+ [⚜️](https://telegra.ph/file/8fe203de66df070f238bf.jpg)
 """
 
 buttons = [
     [
-        InlineKeyboardButton(
-            text="Добавить бота в группу", url="t.me/islam95_bot?startgroup=true"),
+        InlineKeyboardButton(text="📌 Владелец", url="https://t.me/isIam07"),
+        InlineKeyboardButton(text="🖲 Помощник", url="https://t.me/B0rz07"),
     ],
     [
-        InlineKeyboardButton(text="Разработчик🇸🇦", url=f"https://t.me/isIam07"),
+        InlineKeyboardButton(text="📜 Канал", url="https://t.me/TeamBORZ95"),
+        InlineKeyboardButton(text="❔ help", url="http://t.me/Islam95_bot?start=help"),
+    ],
+    [
         InlineKeyboardButton(
-            text="Канал⚜️", url=f"https://t.me/{SUPPORT_CHAT}"
+            text="➕ Добавить бота в группу ➕", url="t.me/Islam95_bot?startgroup=true"
         ),
     ],
-    [
-        InlineKeyboardButton(text="помощь", callback_data="help_back"),
-    ],
 ]
+
 
 
 HELP_STRINGS = """
