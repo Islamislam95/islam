@@ -653,9 +653,9 @@ __help__ = """
  ❍ /setdescription <description>*:* Устанавливает новое описание чата в группе.
  ❍ /admincache*:* принудительно обновите список администраторов
  ❍ /antispam <on/off/yes/no>*:* Переключит нашу технологию защиты от спама или вернет ваши текущие настройки.
- ❍ /del*:* deletes the message you replied to
- ❍ /purge*:* deletes all messages between this and the replied to message.
- ❍ /purge <integer X>*:* deletes the replied message, and X messages following it if replied to a message.
+ ❍ /del*:* удаляет сообщение, на которое вы ответили
+ ❍ /purge*:* удаляет все сообщения между этим и ответным сообщением.
+ ❍ /purge <integer X>*:* удаляет ответное сообщение и X сообщений, следующих за ним.
  ❍ /zombies: counts the number of deleted account in your group
  ❍ /zombies clean: Remove deleted accounts from group..
 
