@@ -657,10 +657,10 @@ __help__ = """
  ❍ /purge*:* удаляет все сообщения между этим и ответным сообщением.
  ❍ /purge <integer X>*:* удаляет ответное сообщение и X сообщений, следующих за ним.
  ❍ /zombies: подсчитывает количество удаленных аккаунтов в вашей группе
- ❍ /zombies clean: Remove deleted accounts from group..
+ ❍ /zombies clean: удаляет удаленные аккаунты из чата
 
-*Note:* Night Mode chats get Automatically closed at 12 am(IST)
-and Automatically openned at 6 am(IST) To Prevent Night Spams.
+*Внимание:* Чаты в ночном режиме автоматически закрываются в 12 ночью (мск)
+и автоматически открываются в 6 утром (Мск) Для предотвращения ночных спамов.
 
 ⚠️ `Read from top`
 """
@@ -707,7 +707,7 @@ dispatcher.add_handler(SETCHAT_TITLE_HANDLER)
 dispatcher.add_handler(SETSTICKET_HANDLER)
 dispatcher.add_handler(SETDESC_HANDLER)
 
-__mod_name__ = "Admin"
+__mod_name__ = "Админ"
 __command_list__ = [
     "adminlist",
     "admins",
