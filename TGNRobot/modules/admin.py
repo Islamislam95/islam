@@ -656,7 +656,7 @@ __help__ = """
  ❍ /del*:* удаляет сообщение, на которое вы ответили
  ❍ /purge*:* удаляет все сообщения между этим и ответным сообщением.
  ❍ /purge <integer X>*:* удаляет ответное сообщение и X сообщений, следующих за ним.
- ❍ /zombies: counts the number of deleted account in your group
+ ❍ /zombies: подсчитывает количество удаленных аккаунтов в вашей группе
  ❍ /zombies clean: Remove deleted accounts from group..
 
 *Note:* Night Mode chats get Automatically closed at 12 am(IST)
