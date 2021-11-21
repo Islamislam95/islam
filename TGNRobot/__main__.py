@@ -100,9 +100,9 @@ buttons = [
 
 HELP_STRINGS = """
 `ʏᴏᴜ ᴄᴀɴ ᴄʜᴏᴏꜱᴇ ᴀɴ ᴏᴘᴛɪᴏɴ ʙᴇʟᴏᴡ, ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴀ ʙᴜᴛᴛᴏɴ..`
-ᴀʟꜱᴏ ʏᴏᴜ ᴄᴀɴ ᴀꜱᴋ ᴀɴʏᴛʜɪɴɢ ɪɴ ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ [❤️](https://telegra.ph/file/cab6825dea9263d347831.jpg)"""
+ᴀʟꜱᴏ ʏᴏᴜ ᴄᴀɴ ᴀꜱᴋ ᴀɴʏᴛʜɪɴɢ ɪɴ ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ [⚜️](https://telegra.ph/file/fc4cefb800d70f529cd66.jpg)"""
 
-START_IMG = "https://telegra.ph/file/8fe203de66df070f238bf.jpg"
+START_IMG = "https://telegra.ph/file/a1141e3a0b15308a889ad.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project [Pratheek](t.me/isIam07) \
