@@ -74,27 +74,25 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-ʜᴏɪ, ɪ ᴍ Powerful Robot
-`ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ ᴀɴᴅ ɪ ᴍ ᴠᴇʀʏ ᴘᴏᴡᴇʀꜰᴜʟʟ ʙᴏᴛ! ʜɪᴛ` /help
+BORZ поможет модерировать ваши чаты!
+
+Добавьте бота в ваш чат и выдайте права администратора.
  [❤](https://telegra.ph/file/8fe203de66df070f238bf.jpg)
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="ᴀᴅᴅ ʀᴏʙᴏᴛ ᴛᴏ ᴜʀ ᴄʜᴀᴛ", url="t.me/AnimexWrldOfficialBot?startgroup=true"),
+            text="Добавить бота в группу", url="t.me/islam95_bot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="ꜱᴏᴜʀᴄᴇ 💫", url=f"https://t.me/pratheek06"),
+        InlineKeyboardButton(text="Разработчик🇸🇦", url=f"https://t.me/isIam07"),
         InlineKeyboardButton(
-            text="ꜱᴜᴘᴘᴏʀᴛ ⚡", url=f"https://t.me/{SUPPORT_CHAT}"
+            text="Канал⚜️", url=f"https://t.me/{SUPPORT_CHAT}"
         ),
     ],
     [
-        InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇꜱ ☑️", url=f"https://t.me/AnimeXWrld_Chat"),
-    ],
-    [
-        InlineKeyboardButton(text="ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅꜱ", callback_data="help_back"),
+        InlineKeyboardButton(text="помощь", callback_data="help_back"),
     ],
 ]
 
@@ -106,8 +104,8 @@ HELP_STRINGS = """
 START_IMG = "https://telegra.ph/file/8fe203de66df070f238bf.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project [Pratheek](t.me/pratheek06) \
- Supporting isnt always financial! [ ɴᴇᴛᴡᴏʀᴋ](https://t.me/SHIZUKA_VC_SUPPORT) \
+ You can support the project [Pratheek](t.me/isIam07) \
+ Supporting isnt always financial! [ Канал](https://t.me/TeamBORZ95) \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
 IMPORTED = {}
@@ -356,7 +354,7 @@ def zaid_about_callback(update, context):
     query = update.callback_query
     if query.data == "zaid_":
         query.message.edit_text(
-            text=""" ℹ️ I am [Powerful Robot](t.me/pratheek06), a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I am [Powerful Robot](t.me/isIam07), a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
@@ -365,7 +363,7 @@ def zaid_about_callback(update, context):
                  \n❍ I check for admins' permissions before executing any command and more stuffs
                  \n\n_TGN's licensed under the GNU General Public License v3.0_
                  \n❍ Add Assistant .
-                 \nHere is the [💾Repository](https://t.me/pratheek06).
+                 \nHere is the [💾Repository](https://t.me/isIam07).
                  \n\nIf you have any question about bot, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -392,8 +390,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I am [Robot](t.me/AnimeXWrld_Chat)
-                 \nHere is the [Source Code](https://pratheek06) .""",
+            text=""" Hi..🤗 I am [Robot](t.me/TeamBORZ95)
+                 \nHere is the [Source Code](https:/isIam07) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
