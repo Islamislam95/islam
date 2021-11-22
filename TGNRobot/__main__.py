@@ -74,37 +74,43 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Данный бот поможет модерировать ваши чаты!
-Добавьте бота в ваш чат и выдайте права администратора.
-/help: Нажмите здесь, Я расскажу вам больше о себе!
- [⚜️](https://telegra.ph/file/cab6825dea9263d347831.jpg)
+ʜᴏɪ, ɪ ᴍ ᴛɢɴ ʀᴏʙᴏᴛ
+`ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ ᴀɴᴅ ɪ ᴍ ᴠᴇʀʏ ᴘᴏᴡᴇʀꜰᴜʟʟ ʙᴏᴛ! ʜɪᴛ` /help
+ [❤](https://telegra.ph/file/cab6825dea9263d347831.jpg)
 """
 
 buttons = [
     [
-        InlineKeyboardButton(text="📌 Владелец", url="https://t.me/isIam07"),
-        InlineKeyboardButton(text="🖲 Помощник", url="https://t.me/B0rz07"),
-    ],
-    [
-        InlineKeyboardButton(text="📜 Канал", url="https://t.me/TeamBORZ95"),
-        InlineKeyboardButton(text="❔ help", url="http://t.me/Islam95_bot?start=help"),
-    ],
-    [
         InlineKeyboardButton(
-            text="➕ Добавить бота в группу ➕", url="t.me/Islam95_bot?startgroup=true"
+            text="ᴀᴅᴅ ᴛɢɴ ʀᴏʙᴏᴛ ᴛᴏ ᴜʀ ᴄʜᴀᴛ", url="t.me/TGN_Ro_bot?startgroup=true"),
+    ],
+    [
+        InlineKeyboardButton(text="ꜱᴏᴜʀᴄᴇ 💫", url=f"https://github.com/Itsunknown-12/TGN-Robot"),
+        InlineKeyboardButton(
+            text="ꜱᴜᴘᴘᴏʀᴛ ⚡", url=f"https://t.me/{SUPPORT_CHAT}"
         ),
+    ],
+    [
+        InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇꜱ ☑️", url=f"https://t.me/The_Godfather_Network"),
+        InlineKeyboardButton(
+            text="ᴛɢɴ ᴄʜᴀᴛ", url=f"https://t.me/greatpersonxd"
+        ),
+    ],
+    [
+        InlineKeyboardButton(text="ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅꜱ", callback_data="help_back"),
     ],
 ]
 
+
 HELP_STRINGS = """
 `ʏᴏᴜ ᴄᴀɴ ᴄʜᴏᴏꜱᴇ ᴀɴ ᴏᴘᴛɪᴏɴ ʙᴇʟᴏᴡ, ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴀ ʙᴜᴛᴛᴏɴ..`
-ᴀʟꜱᴏ ʏᴏᴜ ᴄᴀɴ ᴀꜱᴋ ᴀɴʏᴛʜɪɴɢ ɪɴ ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ [⚜️](https://telegra.ph/file/cab6825dea9263d347831.jpg)"""
+ᴀʟꜱᴏ ʏᴏᴜ ᴄᴀɴ ᴀꜱᴋ ᴀɴʏᴛʜɪɴɢ ɪɴ ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ [❤️](https://telegra.ph/file/cab6825dea9263d347831.jpg)"""
 
-START_IMG = "https://telegra.ph/file/d8ffceb79867115a7c874.jpg"
+START_IMG = "https://telegra.ph/file/63d1ee18f81c92d11210e.mp4"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project [Lucifer](t.me/isIam07) \
- Supporting isnt always financial! [ ɴᴇᴛᴡᴏʀᴋ](https://t.me/isIam07) \
+ You can support the project [Lucifer](t.me/detctective_de) \
+ Supporting isnt always financial! [ ɴᴇᴛᴡᴏʀᴋ](https://t.me/Zaid_updates) \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
 IMPORTED = {}
@@ -218,7 +224,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_video(
-            START_IMG, caption= "<code>Я тут\nI am Awake Since</code>: <code>{}</code>".format(
+            START_IMG, caption= "<code>Zaid is Here For You❤\nI am Awake Since</code>: <code>{}</code>".format(
                 uptime            
             ),
             parse_mode=ParseMode.HTML,
@@ -353,16 +359,17 @@ def zaid_about_callback(update, context):
     query = update.callback_query
     if query.data == "zaid_":
         query.message.edit_text(
-            text=""" ℹ️ я [BORZ](t.me/islam95_bot), мощный бот для управления группой, созданный, чтобы помочь вам легко управлять своей группой.
-                 \n❍ Я могу забанить пользователей.
-                 \n❍ Я могу приветствовать пользователей настраиваемыми приветственными сообщениями и даже устанавливать правила группы.
-                 \n❍ У меня продвинутая система защиты от antiflood 
-                 \n❍ Я могу предупреждать пользователей, пока они не достигнут максимального количества предупреждений, с каждым предопределенным действием, таким как бан, мут, кик и т. Д.
-                 \n❍ У меня есть система ведения заметок, черные списки и даже заранее определенные ответы по определенным ключевым словам.
-                 \n❍ Я проверяю права администратора перед выполнением любой команды и других вещей.
-                 \n❍ Я могу проигрывать музыку в группе голосовом чате.
-                 \n❍ Я могу воспроизводить видео в групповом видеочате.
-                 \n❍ Я могу воспроизводить Фильмы и Сериалы в групповом видеочате.
+            text=""" ℹ️ I am [TGN Robot](t.me/TGN_Ro_bot), a powerful group management bot built to help you manage your group easily.
+                 \n❍ I can restrict users.
+                 \n❍ I can greet users with customizable welcome messages and even set a group's rules.
+                 \n❍ I have an advanced anti-flood system.
+                 \n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
+                 \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
+                 \n❍ I check for admins' permissions before executing any command and more stuffs
+                 \n\n_TGN's licensed under the GNU General Public License v3.0_
+                 \n❍ Assistant @TGN\_Assistant.
+                 \nHere is the [💾Repository](https://github.com/Itsunknown-12/TGN-Robot).
+                 \n\nIf you have any question about bot, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -388,7 +395,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I am [BORZ](t.me/isIam07).""",
+            text=""" Hi..🤗 I am [Robot](t.me/TGN_Ro_Bot)
+                 \nHere is the [Source Code](https://github.com/Itsunknown-12/TGN-Robot) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
