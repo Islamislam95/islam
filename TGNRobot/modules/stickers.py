@@ -168,29 +168,29 @@ def kang(update: Update, context: CallbackContext):
                     emojis=sticker_emoji,
                 )
                 msg.reply_text(
-                    f"Sticker successfully added to [pack](t.me/addstickers/{packname})"
-                    + f"\nEmoji is: {sticker_emoji}",
+                    f"Стикер успешно добавлена в [Набор стикеров](t.me/addstickers/{packname})"
+                    + f"\nСмайлик: {sticker_emoji}",
                     parse_mode=ParseMode.MARKDOWN,
                 )
 
             except OSError as e:
-                msg.reply_text("I can only kang images m8.")
+                msg.reply_text("Я могу добавить только изображения!")
                 print(e)
                 return
 
             except TelegramError as e:
                 if (
                     e.message
-                    == "Internal Server Error: sticker set not found (500)"
+                    == "Внутренняя ошибка сервера: набор стикер пак не найден (500)"
                 ):
                     msg.reply_text(
-                        "Sticker successfully added to [pack](t.me/addstickers/%s)"
+                        "Стикер успешно добавлена в [Набор стикеров](t.me/addstickers/%s)"
                         % packname
                         + "\n"
-                        "Emoji is:" + " " + sticker_emoji,
+                        "Смайлик:" + " " + sticker_emoji,
                         parse_mode=ParseMode.MARKDOWN,
                     )
-                elif e.message == "Invalid sticker emojis":
+                elif e.message == "Недопустимые смайлики с стикерами":
                     msg.reply_text("Invalid emoji(s).")
                 elif e.message == "Sticker_png_dimensions":
                     im.save(kangsticker, "PNG")
@@ -201,7 +201,7 @@ def kang(update: Update, context: CallbackContext):
                         emojis=sticker_emoji,
                     )
                     msg.reply_text(
-                        f"Sticker successfully added to [pack](t.me/addstickers/{packname})"
+                        f"Стикер успешно добавлена в [Набор стикеров](t.me/addstickers/{packname})"
                         + f"\nEmoji is: {sticker_emoji}",
                         parse_mode=ParseMode.MARKDOWN,
                     )
@@ -250,17 +250,17 @@ def kang(update: Update, context: CallbackContext):
                     emojis=sticker_emoji,
                 )
                 msg.reply_text(
-                    f"Sticker successfully added to [pack](t.me/addstickers/{packname})"
+                    f"Стикер успешно добавлена в [Набор стикеров](t.me/addstickers/{packname})"
                     + f"\nEmoji is: {sticker_emoji}",
                     parse_mode=ParseMode.MARKDOWN,
                 )
             except TelegramError as e:
                 if (
                     e.message
-                    == "Internal Server Error: sticker set not found (500)"
+                    == "Внутренняя ошибка сервера: набор наклеек не найден (500)"
                 ):
                     msg.reply_text(
-                        "Sticker successfully added to [pack](t.me/addstickers/%s)"
+                        "Стикер успешно добавлена в [Набор стикеров](t.me/addstickers/%s)"
                         % packname
                         + "\n"
                         "Emoji is:" + " " + sticker_emoji,
@@ -318,7 +318,7 @@ def kang(update: Update, context: CallbackContext):
                 emojis=sticker_emoji,
             )
             msg.reply_text(
-                f"Sticker successfully added to [pack](t.me/addstickers/{packname})"
+                f"Стикер успешно добавлена в [Набор стикеров](t.me/addstickers/{packname})"
                 + f"\nEmoji is: {sticker_emoji}",
                 parse_mode=ParseMode.MARKDOWN,
             )
@@ -329,10 +329,10 @@ def kang(update: Update, context: CallbackContext):
         except TelegramError as e:
             if (
                 e.message
-                == "Internal Server Error: sticker set not found (500)"
+                == "Стикер успешно добавлена в [Набор стикеров]"
             ):
                 msg.reply_text(
-                    "Sticker successfully added to [pack](t.me/addstickers/%s)"
+                    "Стикер успешно добавлена в [Набор стикеров](t.me/addstickers/%s)"
                     % packname
                     + "\n"
                     "Emoji is:" + " " + sticker_emoji,
@@ -349,7 +349,7 @@ def kang(update: Update, context: CallbackContext):
                     emojis=sticker_emoji,
                 )
                 msg.reply_text(
-                    "Sticker successfully added to [pack](t.me/addstickers/%s)"
+                    "Стикер успешно добавлена в [Набор стикеров](t.me/addstickers/%s)"
                     % packname
                     + "\n"
                     + "Emoji is:"
