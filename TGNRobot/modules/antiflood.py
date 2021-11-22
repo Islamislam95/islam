@@ -408,21 +408,21 @@ __help__ = """
  ❍ /unignoreblue <word>*:* remove prevent auto cleaning of the command
  ❍ /listblue*:* list currently whitelisted commands
 
-*Antiflood* allows you to take action on users that send more than x messages in a row. Exceeding the set flood \
-will result in restricting that user.
- This will mute users if they send more than 10 messages in a row, bots are ignored.
- ❍ /flood*:* Get the current flood control setting
-• *Admins only:*
- ❍ /setflood <int/'no'/'off'>*:* enables or disables flood control
- *Example:* `/setflood 10`
- ❍ /setfloodmode <ban/kick/mute/tban/tmute> <value>*:* Action to perform when user have exceeded flood limit. ban/kick/mute/tmute/tban
-• *Note:*
- • Value must be filled for tban and tmute!!
+Доступные команды:
+- /flood: получите текущие настройки защиты от спама.
+- /setflood <номер/выкл>: устанавите количество сообщений, при которых нужно предпринять действия для пользователя.
+ ✪ /flood*:* Получить текущую настройку контроля antiflood
+*Admin only:*
+ ✪ /setflood <int/'no'/'off'>: включает или отключает контроль.
+ ✪ /setfloodmode <ban/kick/mute/tban/tmute> <value>: Действие, выполняемое, когда пользователь превысил лимит флуда. ban/kick/mute/tmute/tban
+ Note:
+ - Значение должно быть заполнено для tban и tmute!
  It can be:
- `5m` = 5 minutes
- `6h` = 6 hours
- `3d` = 3 days
- `1w` = 1 week
+It can be:
+ 5m = 5 minutes
+ 6h = 6 hours
+ 3d = 3 days
+ 1w = 1 week
  """
 
 __mod_name__ = "Control"
