@@ -74,9 +74,10 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-BORZ поможет модерировать ваши чаты!
-
+Данный бот поможет модерировать ваши чаты!
 Добавьте бота в ваш чат и выдайте права администратора.
+/help: Нажмите здесь, Я расскажу вам больше о себе!
+ [⚜️](https://telegra.ph/file/cab6825dea9263d347831.jpg)
 """
 
 buttons = [
@@ -95,16 +96,15 @@ buttons = [
     ],
 ]
 
-ANKIVECTOR_IMG = "https://telegra.ph/file/679dccc9edb78b52d882c.jpg"
-
 HELP_STRINGS = """
-`[⚜️](https://telegra.ph/file/fc4cefb800d70f529cd66.jpg)"""
+`ʏᴏᴜ ᴄᴀɴ ᴄʜᴏᴏꜱᴇ ᴀɴ ᴏᴘᴛɪᴏɴ ʙᴇʟᴏᴡ, ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴀ ʙᴜᴛᴛᴏɴ..`
+ᴀʟꜱᴏ ʏᴏᴜ ᴄᴀɴ ᴀꜱᴋ ᴀɴʏᴛʜɪɴɢ ɪɴ ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ [⚜️](https://telegra.ph/file/cab6825dea9263d347831.jpg)"""
 
-START_IMG = "https://telegra.ph/file/a1141e3a0b15308a889ad.jpg"
+START_IMG = "https://telegra.ph/file/d8ffceb79867115a7c874.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project [Pratheek](t.me/isIam07) \
- Supporting isnt always financial! [ Канал](https://t.me/TeamBORZ95) \
+ You can support the project [Lucifer](t.me/isIam07) \
+ Supporting isnt always financial! [ ɴᴇᴛᴡᴏʀᴋ](https://t.me/isIam07) \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
 IMPORTED = {}
@@ -218,7 +218,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_video(
-            START_IMG, caption= "<code>Я тут\n Не спал с</code>: <code>{}</code>".format(
+            START_IMG, caption= "<code>Я тут\nI am Awake Since</code>: <code>{}</code>".format(
                 uptime            
             ),
             parse_mode=ParseMode.HTML,
@@ -353,17 +353,13 @@ def zaid_about_callback(update, context):
     query = update.callback_query
     if query.data == "zaid_":
         query.message.edit_text(
-            text=""" ℹ️ I am [Powerful Robot](t.me/isIam07), a powerful group management bot built to help you manage your group easily.
-                 \n❍ I can restrict users.
-                 \n❍ I can greet users with customizable welcome messages and even set a group's rules.
-                 \n❍ I have an advanced anti-flood system.
-                 \n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
-                 \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
-                 \n❍ I check for admins' permissions before executing any command and more stuffs
-                 \n\n_TGN's licensed under the GNU General Public License v3.0_
-                 \n❍ Add Assistant .
-                 \nHere is the [💾Repository](https://t.me/isIam07).
-                 \n\nIf you have any question about bot, let us know at .""",
+            text=""" ℹ️ I am [BORZ](t.me/islam95_bot), a powerful group management bot built to help you manage your group easily.
+                 \n❍ Я могу забанить пользователей.
+                 \n❍ Я могу приветствовать пользователей настраиваемыми приветственными сообщениями и даже устанавливать правила группы.
+                 \n❍ У меня продвинутая система защиты от antiflood 
+                 \n❍ Я могу предупреждать пользователей, пока они не достигнут максимального количества предупреждений, с каждым предопределенным действием, таким как бан, мут, кик и т. Д.
+                 \n❍ У меня есть система ведения заметок, черные списки и даже заранее определенные ответы по определенным ключевым словам.
+                 \n❍ Я проверяю права администратора перед выполнением любой команды и других вещей.
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -389,8 +385,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I am [Robot](t.me/TeamBORZ95)
-                 \nHere is the [Source Code](https:/isIam07) .""",
+            text=""" Hi..🤗 I am [Robot](t.me/TGN_Ro_Bot)
+                 \nHere is the [Source Code](https://github.com/Itsunknown-12/TGN-Robot) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
