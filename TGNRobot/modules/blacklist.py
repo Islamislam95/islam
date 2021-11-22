@@ -453,20 +453,19 @@ __mod_name__ = "BlackList"
 
 __help__ = """
 
-Blacklists are used to stop certain triggers from being said in a group. Any time the trigger is mentioned, the message will immediately be deleted. A good combo is sometimes to pair this up with warn filters!
+  Вы можете установить фильтры черного списка для автоматического действия над людьми, когда они говорят определенные вещи. Это делается с помощью:\n
 
-*NOTE*: Blacklists do not affect group admins.
+*Внимание*: черные списки не влияют на администраторов групп.
 
- ❍ /blacklist*:* View the current blacklisted words.
-
+ ❍ /blacklist*:* список всех активных фильтров черного списка
 Admin only:
- ❍ /addblacklist <triggers>*:* Add a trigger to the blacklist. Each line is considered one trigger, so using different lines will allow you to add multiple triggers.
- ❍ /unblacklist <triggers>*:* Remove triggers from the blacklist. Same newline logic applies here, so you can remove multiple triggers at once.
- ❍ /blacklistmode <off/del/warn/ban/kick/mute/tban/tmute>*:* Action to perform when someone sends blacklisted words.
+ ❍ /addblacklist <triggers>*:* триггер черного списока. Вы можете устанавливать предложения, заключая в кавычки причину.
+ ❍ /unblacklist <triggers>*:* прекратить внесение в черный список определенного триггера черного списка
+ ❍ /blacklistmode <off/del/warn/ban/kick/mute/tban/tmute>*:* такой же как /unblacklist
 
-Blacklist sticker is used to stop certain stickers. Whenever a sticker is sent, the message will be deleted immediately.
-*NOTE:* Blacklist stickers do not affect the group admin
- ❍ /blsticker*:* See current blacklisted sticker
+. Каждый раз, когда отправляется стикер, сообщение будет немедленно удалено..
+* ПРИМЕЧАНИЕ: * Стикеры из черного списка не влияют на администратора группы.
+ ❍ /blsticker *: * Посмотреть текущий стикер в черном списке
 *Only admin:*
  ❍ /addblsticker <sticker link>*:* Add the sticker trigger to the black list. Can be added via reply sticker
  ❍ /unblsticker <sticker link>*:* Remove triggers from blacklist. The same newline logic applies here, so you can delete multiple triggers at once
