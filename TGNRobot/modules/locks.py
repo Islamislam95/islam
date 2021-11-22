@@ -562,27 +562,22 @@ def __chat_settings__(chat_id, user_id):
 
 
 __help__ = """
-Do stickers annoy you? or want to avoid people sharing links? or pictures? \
-You're in the right place!
-The locks module allows you to lock away some common items in the \
-telegram world; the bot will automatically delete them!
-
- ❍ /locktypes*:* Lists all possible locktypes
+Стикеры вас раздражают? или хотите, чтобы люди не делились ссылками? или картинки? \
+Вы попали в нужное место!
+ ❍ /locktypes*:* Перечисляет все возможные типы блокировки
  
 *Admins only:*
- ❍ /lock <type>*:* Lock items of a certain type (not available in private)
- ❍ /unlock <type>*:* Unlock items of a certain type (not available in private)
- ❍ /locks*:* The current list of locks in this chat.
+ ❍ /lock <type>*:* Блокировка предметов определенного типа.
+ ❍ /unlock <type>*:* Разблокировать предметы определенного типа 
+ ❍ /locks*:* Текущий список блокировок в этом чате
  
-Locks can be used to restrict a group's users.
-eg:
-Locking urls will auto-delete all messages with urls, locking stickers will restrict all \
-non-admin users from sending stickers, etc.
-Locking bots will stop non-admins from adding bots to the chat.
-
+Блокировки могут использоваться для ограничения пользователей группы.
+например:
+Блокировка URL-адресов автоматически удалит все сообщения с URL-адресами, блокирующие стикеров ограничат все \n
+Пользователи, не являющиеся администраторами, не могут отправлять стикеры и т.д.
 *Note:*
- • Unlocking permission *info* will allow members (non-admins) to change the group information, such as the description or the group name
- • Unlocking permission *pin* will allow members (non-admins) to pinned a message in a group
+ • Разрешение на разблокировку * информация * позволит участникам (не администраторам) изменять информацию о группе, такую ​​как описание или имя группы.
+ • Разрешение на разблокировку * PIN-код * позволит участникам (не администраторам
 """
 
 __mod_name__ = "Locks"
