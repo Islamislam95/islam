@@ -402,9 +402,9 @@ def __chat_settings__(chat_id, user_id):
 
 __help__ = """
 
-*Blue text cleaner* removed any made up commands that people send in your chat.
+*Очиститель синего текста* удаляет все выдуманные команды, которые люди отправляют в ваш чат.
  ❍ /cleanblue <on/off/yes/no>*:* clean commands after sending
- ❍ /ignoreblue <word>*:* prevent auto cleaning of the command
+ ❍ /ignoreblue <word>*:* запретить автоматическую очистку команды
  ❍ /unignoreblue <word>*:* remove prevent auto cleaning of the command
  ❍ /listblue*:* list currently whitelisted commands
 
