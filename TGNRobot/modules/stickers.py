@@ -606,10 +606,10 @@ async def drawText(image_path, text):
 
 
 __help__ = """
-  ➢ `/stickerid` : reply to a sticker to me to tell you its file ID.
-  ➢ `/getsticker` : reply to a sticker to me to upload its raw PNG file.
-  ➢ `/kang` : reply to a sticker to add it to your pack.
-  ➢ `/delkang` : reply to a Sticker to remove it from your pack
+  ➢ `/stickerid` : ответь мне на стикер, чтобы посмотреть её ID
+  ➢ `/getsticker` : ответь мне на стикер, чтобы загрузить его PNG файл.
+  ➢ `/kang` : ответьте на стикер, чтобы добавить его в свой набор.
+  ➢ `/delkang` : ответьте на стикер, чтобы удалить её из своего набора
   ➢ `/mmf` : memefiy any sticker and image.
   ➢ `/stickers` : Find stickers for given term on combot sticker catalogue
 """
