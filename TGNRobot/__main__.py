@@ -353,7 +353,7 @@ def zaid_about_callback(update, context):
     query = update.callback_query
     if query.data == "zaid_":
         query.message.edit_text(
-            text=""" ℹ️ I am [BORZ](t.me/islam95_bot), a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ я [BORZ](t.me/islam95_bot), мощный бот для управления группой, созданный, чтобы помочь вам легко управлять своей группой.
                  \n❍ Я могу забанить пользователей.
                  \n❍ Я могу приветствовать пользователей настраиваемыми приветственными сообщениями и даже устанавливать правила группы.
                  \n❍ У меня продвинутая система защиты от antiflood 
@@ -388,8 +388,7 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I am [Robot](t.me/TGN_Ro_Bot)
-                 \nHere is the [Source Code](https://github.com/Itsunknown-12/TGN-Robot) .""",
+            text=""" Hi..🤗 I am [BORZ](t.me/isIam07).""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
