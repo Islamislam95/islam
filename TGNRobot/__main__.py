@@ -77,7 +77,7 @@ PM_START_TEXT = """
 BORZ поможет модерировать ваши чаты!
 
 Добавьте бота в ваш чат и выдайте права администратора.
- [⚜️](https://telegra.ph/file/8fe203de66df070f238bf.jpg)
+(https://telegra.ph/file/8fe203de66df070f238bf.jpg)
 """
 
 buttons = [
@@ -99,8 +99,7 @@ buttons = [
 
 
 HELP_STRINGS = """
-`ʏᴏᴜ ᴄᴀɴ ᴄʜᴏᴏꜱᴇ ᴀɴ ᴏᴘᴛɪᴏɴ ʙᴇʟᴏᴡ, ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴀ ʙᴜᴛᴛᴏɴ..`
-ᴀʟꜱᴏ ʏᴏᴜ ᴄᴀɴ ᴀꜱᴋ ᴀɴʏᴛʜɪɴɢ ɪɴ ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ [⚜️](https://telegra.ph/file/fc4cefb800d70f529cd66.jpg)"""
+`[⚜️](https://telegra.ph/file/fc4cefb800d70f529cd66.jpg)"""
 
 START_IMG = "https://telegra.ph/file/a1141e3a0b15308a889ad.jpg"
 
