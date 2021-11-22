@@ -36,9 +36,9 @@ def stickerid(update: Update, context: CallbackContext):
         )
     else:
         update.effective_message.reply_text(
-            "Hello "
+            "Здравствуйте! "
             + f"{mention_html(msg.from_user.id, msg.from_user.first_name)}"
-            + ", Please reply to sticker message to get id sticker",
+            + ", Ответьте на сообщение с стикером, чтобы получить ID стикера",
             parse_mode=ParseMode.HTML,
         )
 
@@ -48,14 +48,14 @@ def cb_sticker(update: Update, context: CallbackContext):
     msg = update.effective_message
     split = msg.text.split(" ", 1)
     if len(split) == 1:
-        msg.reply_text("Provide some name to search for pack.")
+        msg.reply_text("Введите имя для поиска стикер набора.")
         return
     text = requests.get(combot_stickers_url + split[1]).text
     soup = bs(text, "lxml")
     results = soup.find_all("a", {"class": "sticker-pack__btn"})
     titles = soup.find_all("div", "sticker-pack__title")
     if not results:
-        msg.reply_text("No results found :(.")
+        msg.reply_text("Результатов не найдено :(.")
         return
     reply = f"Stickers for *{split[1]}*:"
     for result, title in zip(results, titles):
@@ -77,7 +77,7 @@ def getsticker(update: Update, context: CallbackContext):
         os.remove("sticker.png")
     else:
         update.effective_message.reply_text(
-            "Please reply to a sticker for me to upload its PNG."
+            "Пожалуйста, ответьте на стикер, чтобы я загрузил ее PNG."
         )
 
 
@@ -123,7 +123,7 @@ def kang(update: Update, context: CallbackContext):
         elif msg.reply_to_message.document:
             file_id = msg.reply_to_message.document.file_id
         else:
-            msg.reply_text("Yea, I can't kang that.")
+            msg.reply_text("Да, я не могу этого сделать.")
 
         kang_file = context.bot.get_file(file_id)
         if not is_animated:
