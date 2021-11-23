@@ -467,12 +467,12 @@ Admin only:
 * ПРИМЕЧАНИЕ: * Стикеры из черного списка не влияют на администратора группы.
  ❍ /blsticker *: * Посмотреть текущий стикер в черном списке
 *Only admin:*
- ❍ /addblsticker <sticker link>*:* Add the sticker trigger to the black list. Can be added via reply sticker
- ❍ /unblsticker <sticker link>*:* Remove triggers from blacklist. The same newline logic applies here, so you can delete multiple triggers at once
- ❍ /rmblsticker <sticker link>*:* Same as above
- ❍ /blstickermode <ban/tban/mute/tmute>*:* sets up a default action on what to do if users use blacklisted stickers
-Note:
- ❍ <sticker link> can be `https://t.me/addstickers/<sticker>` or just `<sticker>` or reply to the sticker message
+ ❍ /addblsticker <ссылка на стикер> *: * Добавить триггер стикера в черный список. Можно добавить с помощью стикера ответа
+ ❍ /unblsticker <ссылка на стикер> *: * Убрать триггеры из черного списка. Здесь применяется та же логика новой строки, поэтому вы можете удалить сразу несколько триггеров.
+ ❍ /rmblsticker <ссылка на стикер> *: * То же, что и выше
+ ❍ /blstickermode <ban / tban / mute / tmute> *: * устанавливает действие по умолчанию, что делать, если пользователи используют стикеры из черного списка
+Примечание:
+  ❍ <ссылка на стикер> может быть https://t.me/addstickers/ <стикер> или ответить на сообщение стикера
 """
 
 BLACKLIST_HANDLER = DisableAbleCommandHandler(
