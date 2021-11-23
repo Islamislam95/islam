@@ -390,16 +390,23 @@ def connect_button(update, context):
 __mod_name__ = "Connect"
 
 __help__ = """
-Sometimes, you just want to add some notes and filters to a group chat, but you don't want everyone to see; This is where connections come in...
-This allows you to connect to a chat's database, and add things to it without the commands appearing in chat! For obvious reasons, you need to be an admin to add things; but any member in the group can view your data.
-
- ❍ /connect: Connects to chat (Can be done in a group by /connect or /connect <chat id> in PM)
- ❍ /connection: List connected chats
- ❍ /disconnect: Disconnect from a chat
- ❍ /helpconnect: List available commands that can be used remotely
-
-*Admin only:*
- ❍ /allowconnect <yes/no>: allow a user to connect to a chat
+ Иногда вы просто хотите добавить некоторые заметки и фильтры в групповой чат, но не хотите, чтобы все видели; Это где подключения приходят...
+  Это позволяет вам подключаться к базе данных чата и добавлять в нее вещи без команд, появляющихся в чате! По понятным причинам, вы должны быть администратором, чтобы добавлять вещи; но любой член группы может просматривать ваши данные.\n
+  Действия доступные с подключенными группами:
+  • Просмотр и редактирование заметок
+  • Просмотр и редактирование фильтров
+  • просматривать и редактировать черные списки
+  • Повышать/понижать пользователей
+  • см. Админлист, см. ссылку-приглашение
+  • Откл/вкл команды в чате
+  • Откл/вкл пользователей в чате
+  • Ограничить/неограничить пользователей в чате
+  • Больше в будущем!\n
+  - Введите /connect или /connection в группе, к которой вы хотите подключиться.
+  - /connection or /connect <chatid>: Подключиться к удаленному чату
+  - /disconnect: Отключиться от чата
+  - /allowconnect on/yes/off/no: Разрешить подключать пользователей к группе\n
+  Вы можете получить идентификатор чата с помощью команды /id в вашем чате. Не удивляйтесь, если идентификатор отрицательный; все супер группы имеют отрицательные идентификаторы.
 """
 
 CONNECT_CHAT_HANDLER = CommandHandler("connect", connect_chat, pass_args=True)
