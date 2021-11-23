@@ -2397,17 +2397,28 @@ def fed_user_help(update: Update, context: CallbackContext):
 __mod_name__ = "Feds"
 
 __help__ = """
-Everything is fun, until a spammer starts entering your group, and you have to block it. Then you need to start banning more, and more, and it hurts.
-But then you have many groups, and you don't want this spammer to be in one of your groups - how can you deal? Do you have to manually block it, in all your groups?\n
-*No longer!* With Federation, you can make a ban in one chat overlap with all other chats.\n
-You can even designate federation admins, so your trusted admin can ban all the spammers from chats you want to protect.\n
-
-*Commands:*\n
-Feds are now divided into 3 sections for your ease. 
-❍ /fedownerhelp*:* Provides help for fed creation and owner only commands
-❍ /fedadminhelp*:* Provides help for fed administration commands
-❍ /feduserhelp*:* Provides help for commands anyone can use
-
+Ах, управление группой. Все весело, пока спаммер не начнет входить в вашу группу, и вам придется заблокировать ее. Тогда нужно начинать банить еще и еще, и это больно.
+  Но тогда у вас много групп, и вы не хотите, чтобы этот спамер был в одной из ваших групп - как вы можете справиться с этим? Вы должны вручную заблокировать это, во всех ваших группах?
+  Больше никогда! С Федерацией вы можете сделать бан в одном чате, перекрывая все остальные чаты.
+  Вы даже можете назначить админов федерации, чтобы ваш доверенный админ мог забанить все чаты, которые вы хотите защитить.
+  Все же экспериментальный этап, создание Федерации может сделать только мой создатель
+  Команды:
+  - /newfed <fedname>: создать новую федерацию с указанным именем. Пользователи могут иметь только одну федерацию. Этот метод также можно использовать для переименования федерации. (не более 64 символов)
+  - /delfed: удалите свою Федерацию и любую информацию, связанную с ней. Не отменяет забаненных пользователей.
+  - /fedinfo <FedID>: информация об указанной Федерации.
+  - /joinfed <FedID>: присоединиться к текущему чату в Федерации. Только владельцы чата могут сделать это. Каждый чат может быть только в одной Федерации.
+  - /leavefed <FedID>: покинуть данную Федерацию. Только владельцы чата могут сделать это.
+  - /fpromote <user>: повышение пользователей, чтобы дать админа федерации. Только владелец Федерации.
+  - /fdemote <user>: переводит пользователя от админа федерации в обычного пользователя. Только владелец Федерации.
+  - /fban <user>: забанить пользователей из всех федераций, где этот чат имеет место, что контролирует исполнитель.
+  - /unfban <user>: отменить пользователя из всех федераций, где этот чат имеет место, что контролирует исполнитель.
+  - /setfrules: Установить правила Федерации.
+  - /frules: Смотреть правила Федерации.
+  - /chatfed: Смотреть Федерацию в текущем чате.
+  - /fedadmins: Показать админов Федерации.
+  - /fbanlist: Отображает всех пользователей, которые стали жертвами в Федерации в это время.
+  - /fedchats: Получить все чаты, которые связаны в Федерации.
+  - /importfbans: Ответьте на файл бэкапа Федерации, чтобы импортировать список забаненных в Федерации сейчас.
 """
 
 NEW_FED_HANDLER = CommandHandler("newfed", new_fed)
