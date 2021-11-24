@@ -113,12 +113,20 @@ def chatbot(update: Update, context: CallbackContext):
     if not is_kuki:
         return
 	
+def chatbot(update: Update, context: CallbackContext):
+    message = update.effective_message
+    chat_id = update.effective_chat.id
+    bot = context.bot
+    is_kuki = sql.is_kuki(chat_id)
+    if not is_kuki:
+        return
+ 
     if message.text and not message.document:
         if not kuki_message(context, message):
             return
         Message = message.text
         bot.send_chat_action(chat_id, action="typing")
-        kukiurl = requests.get('https://www.kukiapi.xyz/api/apikey=KUKIg76Fg4EIo/botname/owner/message='+Message)
+        kukiurl = requests.get('https://www.kukiapi.xyz/api/apikey=KUKIg76Fg4EIo/BORZ/islam/message='+Message)
         Kuki = json.loads(kukiurl.text)
         kuki = Kuki['reply']
         sleep(0.3)
